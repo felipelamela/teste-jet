@@ -9,14 +9,14 @@ const StatusComponent: React.FC<StatusInterface> = ({ status }) => {
   if (status) {
     return (
       <>
-      <td className="w-1/5 px-6 text-sm py-4"><span className="inline-block bg-green-500 text-white px-2 py-1 rounded-full">Available</span></td>
+      <td className="md:w-1/12 md:px-6 md:text-xs md:py-4 "><span className="md:inline-block md:bg-green-500 md:text-white md:px-2 md:py-1 md:rounded-full max-md:bg-green-500 max-md:w-6 max-md:h-6 max-md:rounded-full max-md:text-transparent">Available</span></td>
     </>
     )
   }
   
   return (
       <>
-        <td className="w-1/5 px-6 text-sm py-4"><span className="inline-block bg-red-500 text-white px-2 py-1 rounded-full">Unavailable</span></td>
+        <td className="md:w-1/12 md:px-6 md:text-xs md:py-4  "><span className="md:inline-block md:bg-red-500 md:text-white md:px-2 md:py-1 md:rounded-full max-md:bg-red-500 max-md:w-6 max-md:h-6 max-md:rounded-full max-md:text-transparent">Unavailable</span></td>
       </>
   )
 }

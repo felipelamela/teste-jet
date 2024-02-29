@@ -15,7 +15,7 @@ const RatingComponent: React.FC<ratingInterface> = ({ rating }) => {
   }
   
   return (
-      <td className="w-1/5 px-6 text-sm py-4">{starRating[rat]}</td>
+      <td className="md:w-3/12 md:px-6 md:text-lg md:py-4 max-md:absolute">{starRating[rat]}</td>
   )
 }
 

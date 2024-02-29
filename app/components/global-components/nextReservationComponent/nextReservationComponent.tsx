@@ -6,7 +6,7 @@ interface ReservationDateInterface{
 
 const NextReservationComponent:React.FC<ReservationDateInterface> = ({reservationDate}) => {
   return (
-      <td className="w-1/5 px-6 text-sm py-4">{reservationDate}</td>
+      <td className="md:w-3/12 md:px-6 md:text-sm md:py-4 max-md:absolute max-md:left-[50%] max-md:top-[40px] text-[#686868]">{reservationDate}</td>
   )
 }
 
