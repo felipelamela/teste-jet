@@ -4,9 +4,8 @@ interface ratingInterface{
     rating:number
 }
 const RatingComponent: React.FC<ratingInterface> = ({ rating }) => {
-  const rat = `${rating}`
 
-  const starRating = {
+  const starRating:{[key:string]: string} = {
     1: '★',
     2: '★ ★',
     3: '★ ★ ★',
@@ -15,7 +14,7 @@ const RatingComponent: React.FC<ratingInterface> = ({ rating }) => {
   }
   
   return (
-      <td className="md:w-3/12 md:px-6 md:text-lg md:py-4 max-md:absolute max-md:z-10 max-md:top-[70px] max-md:left-[170px]">{starRating[rat]}</td>
+    <td className="md:w-3/12 md:px-6 md:text-lg md:py-4 max-md:absolute max-md:z-10 max-md:top-[70px] max-md:left-[170px]">{starRating[rating]}</td>
   )
 }
 
