@@ -3,7 +3,7 @@ import React from 'react'
 
 const ActionComponent = () => {
   return (
-    <td className="w-1/5 px-6 text-sm py-4">. . .</td>
+    <td className="md:w-1/12 md:px-6 md:text-sm md:py-4 top-[10px] absolute z-10 max-md:right-[6px]"><img className='w-[45px]' src="menu.svg" alt="Menu" /></td>
 
   )
 }

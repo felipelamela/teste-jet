@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import React from 'react'
 
 interface CarInterface{
@@ -8,12 +7,10 @@ interface CarInterface{
 
 const CarComponent: React.FC<CarInterface> = ({ img, title }) => {
   return (
-    <td className="w-1/5 px-6 py-4 text-sm relative items-center">
-      <div className='w-50 h-50 flex items-center justify-center"'>
-        <img src={img} className='max-w-full max-h-full ' alt="" />
-      </div>
-      <div className="absolute top-7 left-20">
-        <p className='px-10'>{title}</p>
+    <td className="md:w-4/12 md:px-0 md:py-0 md:text-sm md:relative md:items-center max-md:flex max-md:flex-row p-2">
+      <img src={img} className='max-md:col-span-1 md:size-[100px] max-w-[150px] basis-1/4' style={{ objectFit: 'contain' }} alt="Carro" />
+      <div className="md:absolute md:top-10 md:left-[90px] max-md:basis-2/4 max-md:col-span-3">
+        <p className='md:px-10 max-md:pl-3 max-md:text-xl'>{title}</p>
       </div>
     </td>
   );

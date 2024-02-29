@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <div className="flex justify-center items-center h-screen">
-        <div className="max-w-screen-2xl w-full overflow-x-auto">
+        <div className="max-w-screen-2xl md:w-full  max-md:w-screen">
           <table className="min-w-full divide-y divide-gray-200">
             <TheadComponent />
             <TbodyComponent />
@@ -16,3 +16,7 @@ export default function Home() {
     
   );
 }
+
+// <div className="flex justify-center items-center h-screen"></div>
+//   <div className="overflow-x-auto">
+//     <table className="min-w-full divide-y divide-gray-200">
