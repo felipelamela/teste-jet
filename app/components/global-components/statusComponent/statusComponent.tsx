@@ -7,7 +7,6 @@ interface StatusInterface{
 
 const StatusComponent: React.FC<StatusInterface> = ({ status, mobile }) => {
 
-  if (mobile === null) return ''
   if (status) {
     return (
       <>

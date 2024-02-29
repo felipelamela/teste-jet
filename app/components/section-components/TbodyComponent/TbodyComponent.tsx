@@ -5,7 +5,7 @@ import ActionComponent from '../../global-components/actionComponent/actionCompo
 import RatingComponent from '../../global-components/ratingComponent/ratingComponent'
 import StatusComponent from '../../global-components/statusComponent/statusComponent'
 import NextReservationComponent from '../../global-components/nextReservationComponent/nextReservationComponent'
-
+import LoadingComponent from '../../global-components/loadingComponent/loadingComponent'
 //É um exemplo de um retorno de uma possivel api para demonstrar o comportamento
 const listTBody = [
   {
@@ -60,6 +60,9 @@ const TbodyComponent = () => {
       handleResize();
     };
   }, []);
+
+  if (mobile === null) return <LoadingComponent/>
+  
 
   return (
       <tbody className="md:bg-white divide-y divide-gray-200 ">
