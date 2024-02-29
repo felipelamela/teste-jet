@@ -42,7 +42,7 @@ const listTBody = [
 ]
 
 const TbodyComponent = () => {
-  const [mobile, setMobile] = useState<boolean | null>(null)
+  const [mobile, setMobile] = useState<boolean | null>(false)
 
 
   //esse useEffect serve tbm como exemplo de uma possivel API ou até mesmo de um Context
