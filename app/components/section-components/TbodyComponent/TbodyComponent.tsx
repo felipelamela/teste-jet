@@ -54,12 +54,11 @@ const TbodyComponent = () => {
       }
       return setMobile(false)
     };
-
     window.addEventListener('resize', handleResize);
     return () => {
       handleResize();
     };
-  }, []);
+  }, [mobile]);
 
   if (mobile === null) return <LoadingComponent/>
   
