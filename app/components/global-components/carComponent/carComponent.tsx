@@ -6,7 +6,7 @@ interface CarInterface{
     title:string
 }
 
-const carComponent:React.FC<CarInterface> = ({img, title}) => {
+const CarComponent:React.FC<CarInterface> = ({img, title}) => {
   return (
     <td className="w-1/5 px-6 py-4 text-sm flex items-center">
     <div className="w-1/2 mr-2" style={{ width: '80px' }}>
@@ -19,4 +19,4 @@ const carComponent:React.FC<CarInterface> = ({img, title}) => {
   )
 }
 
-export default carComponent
+export default CarComponent

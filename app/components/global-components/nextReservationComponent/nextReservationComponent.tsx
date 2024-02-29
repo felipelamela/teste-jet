@@ -4,10 +4,10 @@ interface ReservationDateInterface{
     reservationDate:string
 }
 
-const nextReservationComponent:React.FC<ReservationDateInterface> = ({reservationDate}) => {
+const NextReservationComponent:React.FC<ReservationDateInterface> = ({reservationDate}) => {
   return (
       <td className="w-1/5 px-6 text-sm py-4">{reservationDate}</td>
   )
 }
 
-export default nextReservationComponent
+export default NextReservationComponent

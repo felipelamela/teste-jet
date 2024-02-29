@@ -4,7 +4,7 @@ interface StatusInterface{
     status: string
 }
 
-const statusComponent:React.FC<StatusInterface> = ({status}) => {
+const StatusComponent:React.FC<StatusInterface> = ({status}) => {
   return (
       <>
         <td className="w-1/5 px-6 text-sm py-4">{status}</td>
@@ -12,4 +12,4 @@ const statusComponent:React.FC<StatusInterface> = ({status}) => {
   )
 }
 
-export default statusComponent
+export default StatusComponent
