@@ -6,17 +6,17 @@ interface CarInterface{
     title:string
 }
 
-const CarComponent:React.FC<CarInterface> = ({img, title}) => {
+const CarComponent: React.FC<CarInterface> = ({ img, title }) => {
   return (
-    <td className="w-1/5 px-6 py-4 text-sm flex items-center">
-    <div className="w-1/2 mr-2" style={{ width: '80px' }}>
-      <Image src="/mini.png" width={80} height={60} alt="Picture of the author" />
-    </div>
-    <div className="w-1/2">
-      <p>Mini carro</p>
-    </div>
-  </td>
-  )
-}
+    <td className="w-1/5 px-6 py-4 text-sm relative items-center">
+      <div className='w-50 h-50 flex items-center justify-center"'>
+        <img src={img} className='max-w-full max-h-full ' alt="" />
+      </div>
+      <div className="absolute top-7 left-20">
+        <p className='px-10'>{title}</p>
+      </div>
+    </td>
+  );
+};
 
-export default CarComponent
+export default CarComponent;
